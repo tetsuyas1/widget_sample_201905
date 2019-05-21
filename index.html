@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="UTF-8">
 <style type="text/css">
 <!--
 h1 {
@@ -8,9 +9,9 @@ h1 {
 }
 /* iframe要素内でサイズ指定している場合は必要なし */
 .iframe {
-    top: 100px;
-    left: 100px;
-    width: 560px;
+    top: 0px;
+    left: 0px;
+    width: 1000px;
     height: 315px;
 }
 /* CSSでレスポンシブ対応 */
@@ -30,14 +31,32 @@ h1 {
 }
 -->
 </style>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(".iframe").contentWindow.location.reload();
+    </script>
 </head>
 <body>
+    <script>
+        alert("width="+ $(window).width()+"px");
+    </script>
     <h1>
         呼び出し側ページ
     </h1>
-    <iframe width="800px" height="315px" src="child.html" frameborder="3"></iframe>
-
+    <p class="width"></p>
+    <!--div>
+        <p>
+            &lt;　iframe width="1000px" height="315px" src="child.html" frameborder="3" &gt;<br />
+            として幅を1000pxに固定しています。
+        </p>
+        </pre>
+        <iframe width="1000px" height="315px" src="child.html" frameborder="3"></iframe>
+    </div-->
     <div class="iframe-wrapper">
+        <p>レスポンシブ対応のiframeサンプル</p>
         <iframe src="child.html" frameborder="0" class="iframe"></iframe>
     </div>
 </body>
