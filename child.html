@@ -14,7 +14,7 @@ body {
 .pc {
     display: block;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     body {
         background-color: lightsalmon;
     }
@@ -35,7 +35,6 @@ body {
         $(function(){
             $('#width').html($(window).width());
         });
-
     </script>
 </head>
 <body>
@@ -43,13 +42,13 @@ body {
         TNQLの提供するwidgetエリアです。
     </h1>
     <p>
-        iframeで与えられているwidthは<span id="width"></span>px
+        jQueryで取得できるwidthは<span id="width"></span>px
     </p>
     <p class="pc">
-        PC向けコンテンツ（幅1000px以上）をここ書きます
+        PC向けコンテンツ（幅480px以上）をここ書きます
     </p>
     <p class="mobile">
-        モバイル向けコンテンツ（幅1000px以下）をここに書きます。
+        モバイル向けコンテンツ（幅480px以下）をここに書きます。
     </p>
 </body>
 </html>

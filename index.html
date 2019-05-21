@@ -1,6 +1,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
 <style type="text/css">
 <!--
 h1 {
@@ -15,7 +17,7 @@ h1 {
     height: 315px;
 }
 /* CSSでレスポンシブ対応 */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     .iframe-wrapper {
         position: relative;
         width: 100%;
@@ -38,7 +40,7 @@ h1 {
     <script>
         $(function(){
             $('#b_width').html($(window).width());
-            $(".iframe").contentWindow.location.reload();
+            //$(".iframe").contentWindow.location.reload();
         });
     </script>
 </head>
@@ -47,7 +49,7 @@ h1 {
         呼び出し側ページ
     </h1>
     <p class="width">
-        ブラウザの横幅は <span id="b_width"></span>pxが与えられています。
+        jQueryで取得できるwidth（ブラウザの横幅）は <span id="b_width"></span>pxが与えられています。
     </p>
     <div class="iframe-wrapper">
         <p>レスポンシブ対応のiframeサンプル</p>
