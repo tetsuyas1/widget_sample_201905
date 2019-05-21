@@ -1,19 +1,36 @@
 <html>
 <head>
 <style>
-    <!--
-    body {
-        background-color: lightskyblue;
+<!--
+body {
+    background-color: lightskyblue;
+}
+.mobile {
+    display: none;
+}
+.pc {
+    display: block;
+}
+@media screen and (max-width: 560px) {
+    .mobile {
+        display: block;
     }
-    -->
+    .pc {
+        display: none;
+    }
+}
+-->
 </style>
 </head>
 <body>
     <h1>
         ウィジェット表示部分
     </h1>
-    <p>
-        このエリアは呼び出され側です。
+    <p class="pc">
+        PC向け
+    </p>
+    <p class="mobile">
+        モバイル向け
     </p>
 </body>
 </html>
