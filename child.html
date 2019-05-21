@@ -14,7 +14,7 @@ body {
 .pc {
     display: block;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1000px) {
     body {
         background-color: lightsalmon;
     }
@@ -27,16 +27,29 @@ body {
 }
 -->
 </style>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#width').html($(window).width());
+        });
+
+    </script>
 </head>
 <body>
     <h1>
         TNQLの提供するwidgetエリアです。
     </h1>
+    <p>
+        iframeで与えられているwidthは<span id="width"></span>px
+    </p>
     <p class="pc">
-        PC向けコンテンツを書きます
+        PC向けコンテンツ（幅1000px以上）をここ書きます
     </p>
     <p class="mobile">
-        モバイル向けコンテンツを書きます。
+        モバイル向けコンテンツ（幅1000px以下）をここに書きます。
     </p>
 </body>
 </html>

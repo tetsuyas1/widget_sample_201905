@@ -15,7 +15,7 @@ h1 {
     height: 315px;
 }
 /* CSSでレスポンシブ対応 */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1000px) {
     .iframe-wrapper {
         position: relative;
         width: 100%;
@@ -36,25 +36,19 @@ h1 {
             integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
             crossorigin="anonymous"></script>
     <script>
-        $(".iframe").contentWindow.location.reload();
+        $(function(){
+            $('#b_width').html($(window).width());
+            $(".iframe").contentWindow.location.reload();
+        });
     </script>
 </head>
 <body>
-    <script>
-        alert("width="+ $(window).width()+"px");
-    </script>
     <h1>
         呼び出し側ページ
     </h1>
-    <p class="width"></p>
-    <!--div>
-        <p>
-            &lt;　iframe width="1000px" height="315px" src="child.html" frameborder="3" &gt;<br />
-            として幅を1000pxに固定しています。
-        </p>
-        </pre>
-        <iframe width="1000px" height="315px" src="child.html" frameborder="3"></iframe>
-    </div-->
+    <p class="width">
+        ブラウザの横幅は <span id="b_width"></span>pxが与えられています。
+    </p>
     <div class="iframe-wrapper">
         <p>レスポンシブ対応のiframeサンプル</p>
         <iframe src="child.html" frameborder="0" class="iframe"></iframe>
