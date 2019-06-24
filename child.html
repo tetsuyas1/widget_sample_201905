@@ -57,7 +57,7 @@ hr {display:none;}
 /* base */
 
 body {
-    color:#000;
+    color:#222222;
     font-size:1em;
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
@@ -113,6 +113,7 @@ img {
   width: 758px;
   height: 130px;
   background: url('img/bg_banner.png') no-repeat 0 0;
+  position: relative;
 }
 
 .weather_info .info {
@@ -169,14 +170,17 @@ img {
 }
 
 .weather_info .txt-img .txt {
-  float: left;
-  width: 250px;
-  font-size: 14px;
-  line-height: 1.4em;
+    float: left;
+    width: 260px;
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-left: -5px;
+    position: absolute;
+    z-index: 100;
 }
 
 .weather_info .txt-img .txt p {
-  padding: 10px 0 8px;
+  padding: 6px 0 8px;
 }
 
 .weather_info .txt-img .txt dt {
@@ -202,19 +206,35 @@ img {
   font-size: 12px;
   height: 130px;
   box-sizing: border-box;
-  padding: 95px 0 0;
+  padding: 86px 0 0;
   text-align: center;
 }
 
 .weather_info .btn a:after {
   position: absolute;
-  top: 35px;
-  left: 20px;
+  top: 45px;
+  left: 23px;
   content: "▶︎";
   font-size: 30px;
 }
 
+a.weather_info_a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
 @media screen and (max-width: 480px) {
+
+    body{
+      line-height: 1;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
 
     .mobile {
         display: block;
@@ -274,7 +294,7 @@ img {
     }
 
     .weather_info .info h3 img {
-      width: 20vw;
+      width: 18vw;
     }
 
     .weather_info .info .cloud {
@@ -323,6 +343,16 @@ img {
       color: #d4a40d;
       font-size: 3.6vw;
     }
+
+    a.weather_info_a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 200;
+    }
 }
 </style>
     <script
@@ -338,6 +368,7 @@ img {
 <body>
     <div class="pc">
         <div class="weather_info">
+          <a href="#" class="weather_info_a"></a>
           <div class="info">
             <h3>
               <strong>お天気情報</strong>
@@ -358,7 +389,7 @@ img {
                 <dt>おすすめのフレグランス</dt>
                 <dd>
                   シトラスの香りが贅沢に香る<br>
-                  イソップの「タシット」で爽やかに！
+                  イソップの｢タシット｣で爽やかに！
                 </dd>
               </dl>
             </div>
@@ -373,6 +404,7 @@ img {
     </div>
     <div class="mobile">
         <div class="weather_info">
+          <a href="#" class="weather_info_a"></a>
           <div class="info">
             <div class="ly">
               <h3>
@@ -391,8 +423,8 @@ img {
               <dl>
                 <dt>おすすめのフレグランス</dt>
                 <dd>
-                  シトラスの香りが贅沢に香るかもよ<br>
-                  イソップの「タシット」で爽やかに！
+                  シトラスの香りが贅沢に香る<br>
+                  イソップの｢タシット｣で爽やかに！
                 </dd>
               </dl>
             </div>
