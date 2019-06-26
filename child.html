@@ -1,145 +1,145 @@
 <html>
 <head>
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-     margin: 0;
-     padding: 0;
-     border: 0;
-}
-h1, h2, h3, h4, h5, h6 {font-size:100%;}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
- display: block;
-}
-body {
- line-height: 1;
-}
-ol, ul {
- list-style: none;
-}
-blockquote, q {
- quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
- content: '';
- content: none;
-}
-table {
- border-collapse: collapse;
- border-spacing: 0;
-}
-hr {display:none;}
-/* base */
-body {
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {font-size:100%;}
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  hr {display:none;}
+  /* base */
+  body {
     color:#222222;
     font-size:1em;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-}
-a {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  }
+  a {
     color:#000;
     text-decoration:none;
-}
-a:hover, a:focus {
+  }
+  a:hover, a:focus {
     text-decoration:none;
-  outline: none;
-}
-img {
+    outline: none;
+  }
+  img {
     vertical-align:top;
-}
-input, select {
+  }
+  input, select {
     vertical-align:middle;
-}
-.skip {
+  }
+  .skip {
     text-indent:-5000px;
     width:0; height:0;
     line-height:0; font-size:0;
     margin:0 !important; padding:0 !important;
     border:0px none !important;
-}
-.mobile {
+  }
+  .mobile {
     display: none;
-}
-.pc {
+  }
+  .pc {
     display: block;
-}
-a {
+  }
+  a {
     transition: all .3s;
-}
-a:hover {
+  }
+  a:hover {
     opacity: 0.7;
-}
-img {
-  max-width: 100%;
-}
-.weather_info {
-  display: table;
-  width: 758px;
-  height: 130px;
-  background: url('img/bg_banner.png') no-repeat 0 0;
-  position: relative;
-}
-.weather_info .info {
-  overflow: hidden;
-  display: table-cell;
-  vertical-align: middle;
-  width: 320px;
-  height: 130px;
-}
-.weather_info .info h3 {
-  float: left;
-  width: 120px;
-  text-align: center;
-  font-weight: normal;
-}
-.weather_info .info h3 strong {
-  font-size: 15px;
-  font-weight: normal;
-}
-.weather_info .info h3 span {
-  color: #f17975;
-  font-size: 14px;
-  display: block;
-  margin: 8px 0 10px;
-}
-.weather_info .info h3 img {
-  width: 64px;
-}
-.weather_info .info .cloud {
-  float: left;
-  text-align: center;
-}
-.weather_info .info .cloud img {
-  width: 85px;
-}
-.weather_info .info .cloud p {
-  font-size: 26px;
-  margin: 0 0 10px;
-}
-.weather_info .txt-img {
-  overflow: hidden;
-  display: table-cell;
-  vertical-align: middle;
-  width: 365px;
-  height: 130px;
-}
-.weather_info .txt-img .txt {
+  }
+  img {
+    max-width: 100%;
+  }
+  .weather_info {
+    display: table;
+    width: 758px;
+    height: 130px;
+    background: url('img/bg_banner.png') no-repeat 0 0;
+    position: relative;
+  }
+  .weather_info .info {
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    width: 320px;
+    height: 130px;
+  }
+  .weather_info .info h3 {
+    float: left;
+    width: 120px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .weather_info .info h3 strong {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .weather_info .info h3 span {
+    color: #f17975;
+    font-size: 14px;
+    display: block;
+    margin: 8px 0 10px;
+  }
+  .weather_info .info h3 img {
+    width: 64px;
+  }
+  .weather_info .info .cloud {
+    float: left;
+    text-align: center;
+  }
+  .weather_info .info .cloud img {
+    width: 85px;
+  }
+  .weather_info .info .cloud p {
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
+  .weather_info .txt-img {
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    width: 365px;
+    height: 130px;
+  }
+  .weather_info .txt-img .txt {
     float: left;
     width: 260px;
     font-size: 15px;
@@ -147,69 +147,69 @@ img {
     margin-left: -5px;
     position: absolute;
     z-index: 100;
-}
-.weather_info .txt-img .txt p {
-  padding: 6px 0 8px;
-}
-.weather_info .txt-img .txt dt {
-  font-weight: bold;
-  color: #d4a40d;
-  margin: 0 0 2px;
-}
-.weather_info .txt-img figure {
-  float: right;
-}
-.weather_info .txt-img figure img{
-  width: 115px;
-}
-.weather_info .btn {
-  display: table-cell;
-  vertical-align: middle;
-  height: 130px;
-}
-.weather_info .btn a {
-  position: relative;
-  display: block;
-  color: #fff;
-  font-size: 12px;
-  height: 130px;
-  box-sizing: border-box;
-  padding: 86px 0 0;
-  text-align: center;
-}
-.weather_info .btn a:after {
-  position: absolute;
-  top: 45px;
-  left: 23px;
-  content: "▶︎";
-  font-size: 30px;
-}
-a.weather_info_a {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 200;
-}
-@media screen and (max-width: 480px) {
+  }
+  .weather_info .txt-img .txt p {
+    padding: 6px 0 8px;
+  }
+  .weather_info .txt-img .txt dt {
+    font-weight: bold;
+    color: #d4a40d;
+    margin: 0 0 2px;
+  }
+  .weather_info .txt-img figure {
+    float: right;
+  }
+  .weather_info .txt-img figure img{
+    width: 115px;
+  }
+  .weather_info .btn {
+    display: table-cell;
+    vertical-align: middle;
+    height: 130px;
+  }
+  .weather_info .btn a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    height: 130px;
+    box-sizing: border-box;
+    padding: 86px 0 0;
+    text-align: center;
+  }
+  .weather_info .btn a:after {
+    position: absolute;
+    top: 45px;
+    left: 23px;
+    content: "▶︎";
+    font-size: 30px;
+  }
+  a.weather_info_a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+  @media screen and (max-width: 480px) {
     body{
       line-height: 1;
       padding: 0 15px;
       box-sizing: border-box;
     }
     .mobile {
-        display: block;
+      display: block;
     }
     .pc {
-        display: none;
+      display: none;
     }
     a {
-        transition: all .3s;
+      transition: all .3s;
     }
     a:hover {
-        opacity: 0.7;
+      opacity: 0.7;
     }
     img {
       max-width: 100%;
@@ -298,89 +298,89 @@ a.weather_info_a {
       height: 100%;
       z-index: 200;
     }
-}
+  }
 </style>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-            crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            $('#width').html($(window).width());
-        });
-    </script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script>
+$(function(){
+  $('#width').html($(window).width());
+});
+</script>
 </head>
 <body>
-    <div class="pc">
-        <div class="weather_info">
-          <a href="#" class="weather_info_a"></a>
-          <div class="info">
-            <h3>
-              <strong>お天気情報</strong>
-              <span>2017.08.25</span>
-              <img src="img/tnql_logo.png" alt="">
-            </h3>
-            <div class="cloud">
-              <p>37°/26°</p>
-              <figure>
-                <img src="img/cloud.png" alt="">
-              </figure>
-            </div><!-- .cloud -->
-          </div><!-- .info -->
-          <div class="txt-img">
-            <div class="txt">
-              <p>終日雨の心配なし<br>湿度が高く蒸し暑い一日になりそう</p>
-              <dl>
-                <dt>おすすめのフレグランス</dt>
-                <dd>
-                  シトラスの香りが贅沢に香る<br>
-                  イソップの｢タシット｣で爽やかに！
-                </dd>
-              </dl>
-            </div>
+  <div class="pc">
+    <div class="weather_info">
+      <a href="#" class="weather_info_a"></a>
+      <div class="info">
+        <h3>
+          <strong>お天気情報</strong>
+          <span>2017.08.25</span>
+          <img src="img/tnql_logo.png" alt="">
+        </h3>
+        <div class="cloud">
+          <p>37°/26°</p>
+          <figure>
+            <img src="img/cloud.png" alt="">
+          </figure>
+        </div><!-- .cloud -->
+      </div><!-- .info -->
+      <div class="txt-img">
+        <div class="txt">
+          <p>終日雨の心配なし<br>湿度が高く蒸し暑い一日になりそう</p>
+          <dl>
+            <dt>おすすめのフレグランス</dt>
+            <dd>
+              シトラスの香りが贅沢に香る<br>
+              イソップの｢タシット｣で爽やかに！
+            </dd>
+          </dl>
+        </div>
+        <figure>
+          <img src="img/product.jpg" alt="">
+        </figure>
+      </div><!-- .txt-img -->
+      <div class="btn">
+        <a href="#">もっと見る</a>
+      </div><!-- .btn -->
+    </div><!-- .weather_info -->
+  </div>
+  <div class="mobile">
+    <div class="weather_info">
+      <a href="#" class="weather_info_a"></a>
+      <div class="info">
+        <div class="ly">
+          <h3>
+            <span>2017.08.25</span>
+            <img src="img/tnql_logo.png" alt="">
+          </h3>
+          <div class="cloud">
+            <p>37°/26°</p>
             <figure>
-              <img src="img/product.jpg" alt="">
+              <img src="img/cloud.png" alt="">
             </figure>
-          </div><!-- .txt-img -->
-          <div class="btn">
-            <a href="#">もっと見る</a>
-          </div><!-- .btn -->
-        </div><!-- .weather_info -->
-    </div>
-    <div class="mobile">
-        <div class="weather_info">
-          <a href="#" class="weather_info_a"></a>
-          <div class="info">
-            <div class="ly">
-              <h3>
-                <span>2017.08.25</span>
-                <img src="img/tnql_logo.png" alt="">
-              </h3>
-              <div class="cloud">
-                <p>37°/26°</p>
-                <figure>
-                  <img src="img/cloud.png" alt="">
-                </figure>
-              </div><!-- .cloud -->
-            </div><!-- .ly -->
-            <div class="txt">
-              <p>終日雨の心配なし</p>
-              <dl>
-                <dt>おすすめのフレグランス</dt>
-                <dd>
-                  シトラスの香りが贅沢に香る<br>
-                  イソップの｢タシット｣で爽やかに！
-                </dd>
-              </dl>
-            </div>
-          </div><!-- .info -->
-          <div class="img-btn">
-            <figure>
-              <img src="img/product.jpg" alt="">
-            </figure>
-            <a href="#">もっと見る▶︎</a>
-          </div><!-- .img-btn -->
-        </div><!-- .weather_info -->
-    </div>
+          </div><!-- .cloud -->
+        </div><!-- .ly -->
+        <div class="txt">
+          <p>終日雨の心配なし</p>
+          <dl>
+            <dt>おすすめのフレグランス</dt>
+            <dd>
+              シトラスの香りが贅沢に香る<br>
+              イソップの｢タシット｣で爽やかに！
+            </dd>
+          </dl>
+        </div>
+      </div><!-- .info -->
+      <div class="img-btn">
+        <figure>
+          <img src="img/product.jpg" alt="">
+        </figure>
+        <a href="#">もっと見る▶︎</a>
+      </div><!-- .img-btn -->
+    </div><!-- .weather_info -->
+  </div>
 </body>
 </html>
