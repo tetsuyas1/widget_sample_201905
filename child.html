@@ -86,7 +86,6 @@
     max-width: 100%;
   }
   .weather_info {
-    display: table;
     width: 758px;
     height: 130px;
     background: url('img/bg_banner.png') no-repeat 0 0;
@@ -168,17 +167,15 @@
     z-index: 9999;
     transition: all .3s;
   }
-  .weather_info a.btn_a:hover > .btn {
-    color: #fbe69e;
-  }
-  .weather_info a.btn_a .btn {
+  .weather_info .btn {
     display: table-cell;
     vertical-align: middle;
     height: 130px;
     transition: all .3s;
   }
-  .weather_info a.btn_a .btn {
+  .weather_info .btn {
     position: absolute;
+    top: 0;
     right: 0;
     display: block;
     color: #fff;
@@ -189,12 +186,15 @@
     padding: 86px 0 0;
     text-align: center;
   }
-  .weather_info a.btn_a .btn:after  {
+  .weather_info .btn:after  {
     position: absolute;
     top: 45px;
     left: 23px;
     content: "▶︎";
     font-size: 30px;
+  }
+  .weather_info_a:hover + .btn {
+    color: #fbe69e;
   }
   a.weather_info_a {
     display: block;
@@ -322,6 +322,8 @@ $(function(){
 <body>
   <div class="pc">
     <div class="weather_info">
+      <a href="#" class="weather_info_a"></a>
+      <div class="btn">もっと見る</div><!-- .btn -->
       <div class="info">
         <h3>
           <strong>お天気情報</strong>
@@ -350,9 +352,6 @@ $(function(){
           <img src="img/product.jpg" alt="">
         </figure>
       </div><!-- .txt-img -->
-      <a href="https://www.yahoo.co.jp" class="btn_a">
-        <div class="btn">もっと見る</div>
-      </a><!-- .btn -->
     </div><!-- .weather_info -->
   </div>
   <div class="mobile">
